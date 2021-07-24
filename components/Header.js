@@ -3,19 +3,19 @@ import Icon from "@material-tailwind/react/Icon";
 
 function Header() {
   return (
-    <div className="flex items-center sticky top-0 z-50 px-4 py-2 shadow-md bg-white">
+    <header className="flex items-center sticky top-0 z-50 px-4 py-2 shadow-md bg-white">
       <Button
         color="gray"
         buttonType="outline"
         rounded={true}
         iconOnly={true}
         ripple="dark"
-        className=" md:inline-flex h-20 w-20 border-0"
+        className="md:inline-flex h-20 w-20 border-0"
       >
         <Icon name="menu" size="3xl" />
       </Button>
       <Icon name="description" size="3xl" color="blue" />
-      <h1 className="ml-2 text-gray-700 text-2xl">Docs</h1>
+      <h1 className="md:inline-flex ml-2 text-gray-700 text-2xl">Docs</h1>
 
       <div
         className="flex flex-grow items-center mx-5 px-5 py-2 md:mx-20 bg-gray-100 
@@ -43,12 +43,12 @@ function Header() {
       <img
         loading="lazy"
         // onClick={signOut}
-        className="cursor-pointer h-12 w-12 rounded-full ml-2"
-        src=""
-        // src={sessionStorage.user.image} 54...
+        className="md:inline-flex cursor-pointer h-12 w-12 rounded-full ml-2"
+        src="http://www.statisticbrain.com/wp-content/uploads/2013/12/PAKFIDAEEAFKCDKC_j-1024x1024.jpg"
+        // src={sessionStorage.user.image} 134
         alt="img"
       />
-    </div>
+    </header>
   );
 }
 
